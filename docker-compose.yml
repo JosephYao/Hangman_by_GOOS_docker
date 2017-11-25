@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  admin:
+    image: openjdk:8u141-jre
+    volumes:
+      - "./app:/hangman"
+    working_dir: /hangman
+    command: ./start.sh
+    ports:
+      - "8090:8090"
