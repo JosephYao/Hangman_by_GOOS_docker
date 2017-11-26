@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-java -jar Hangman_by_GOOS.jar
+java -jar -Dspring.profiles.active=production Hangman_by_GOOS.jar
